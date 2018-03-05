@@ -1,9 +1,9 @@
 # PrettyPrint_Json
 
-Using this code you can view, format and modify your json file
+Using this project you can view, format and modify your json file
 
 
-What are the feautures available in this code
+The features of the project are available by passing some commands given below:
 
 **validate**            : This command checks wether a json file is valid or not
 
