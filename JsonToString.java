@@ -1,10 +1,10 @@
 import java.util.ArrayList;
 
 public class JsonToString {
-  static int inde;
+  static int indent;
 
   JsonToString(int x) {
-    inde = x;
+    indent = x;
   }
 
   public ArrayList<String> prettyJSON(String s) {
@@ -18,9 +18,9 @@ public class JsonToString {
       else str = arr[i];
       prefix = generate(str, ans, prefix);
     }
-    String si = ans.get(ans.size() - 1);
-    if (si.equals("},")) ans.set(ans.size() - 1, "}");
-    if (si.equals("],")) ans.set(ans.size() - 1, "]");
+    String last = ans.get(ans.size() - 1);
+    if (last.equals("},")) ans.set(ans.size() - 1, "}");
+    if (last.equals("],")) ans.set(ans.size() - 1, "]");
     return ans;
   }
 
@@ -54,13 +54,13 @@ public class JsonToString {
   }
 
   public static String make(int x) {
-    String s = indentt(x);
+    String s = generateindent(x);
     String str = "";
-    for (int i = 0; i < inde; i++) str = str + s;
+    for (int i = 0; i < indent; i++) str = str + s;
     return str;
   }
 
-  public static String indentt(int x) {
+  public static String generateindent(int x) {
     String s = "";
     for (int i = 0; i < x; i++) s = "\t" + s;
     return s;
