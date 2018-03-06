@@ -5,15 +5,15 @@ Using this project you can view, format and modify your json file
 
 The features of the project are available by passing some commands given below:
 
-**validate**            : This command checks wether a json file is valid or not
+**--validate**            : This command checks wether a json file is valid or not
 
-**compact**             : This command will print the json file without any spaces which means it is the most minimizable form of your file
+**--compact**             : This command will print the json file without any spaces which means it is the most minimizable form of your file
 
-**prettyprint**         : It beautifies your code and print the json file in pretty print format
+**--prettyprint**         : It beautifies your code and print the json file in pretty print format
 
-**replaceprettyprint**  : It modifies the given file to prettyprint format
+**--replaceprettyprint**  : It modifies the given file to prettyprint format
 
-**replacecompact**      : It modifies the given file into compact format
+**--replacecompact**      : It modifies the given file into compact format
 
 
 **How to use:**
