@@ -49,5 +49,5 @@ args[0] is file path hence file path="c:\sample.json"
 since Iam passing --compact , --prettyprint , --replaceprettyprint
 firstly it print compact form and prettyprint form in the console and fillany the pretty print formate is replaced with the original file
 
-you can pass the commands in any order except file path you shoukd pass the file path as the first argument
+you can pass the commands in any order except file path you should pass the file path as the first argument
 
