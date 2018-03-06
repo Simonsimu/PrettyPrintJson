@@ -1,9 +1,9 @@
 # PrettyPrint_Json
 
-Using this code you can view, format and modify your json file
+Using this project you can view, format and modify your json file
 
 
-What are the feautures available in this code
+The features of the project are available by passing some commands given below:
 
 **validate**            : This command checks wether a json file is valid or not
 
@@ -24,7 +24,7 @@ Before running the code you should add an external jar i.e json.simple.1.1.1.jar
 
 the first argument should be the json file path, and then followed by any command mentioned above each command should be seperated by spaces,
 you can use any integer for the indent by passing it in the command line argument
-you can pass the commands given above based on your requirement along with the path of your json file as the command line arguments
+you can pass the commands given above based on your requirement in any order in the command line arguments, except the file path 
 
 
 For Example command line arguments are: 
