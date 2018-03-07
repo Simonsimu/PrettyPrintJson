@@ -17,12 +17,17 @@ public class JsonFormatter {
       System.out.println("Give file path and other feautures in command line arguments");
       return;
     }
-    filepath = args[0];
     for (String str : args) {
+      if (str.contains("--from-")) filepath = str.substring(7, str.length());
+      if (str.contains("--indent-")) {
+        indent = Integer.parseInt(str.substring(9, str.length()));
+        System.out.println(filepath);
+      }
       if (str.equals("--validate")) validate = true;
-      if (str.equals("--compact")) compact = true;
+      if (str.equals("--compact-output")) compact = true;
+      if (str.equals("--tab")) indent = 1;
       if (str.equals("--prettyprint")) prettyprint = true;
-      if (str.equals("--replaceprettyprint")) replaceprettyprint = true;
+      if (str.equals("--replace")) replaceprettyprint = true;
       if (str.equals("--replacecompact")) replacecompact = true;
       if (isIndent(str)) indent = Integer.parseInt(str);
     }
