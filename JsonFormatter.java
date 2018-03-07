@@ -18,8 +18,8 @@ public class JsonFormatter {
       return;
     }
     for (String str : args) {
-      if (str.contains("--from-")) filepath = str.substring(7, str.length());
-      if (str.contains("--indent-")) {
+      if (str.contains("--from-file=")) filepath = str.substring(12, str.length());
+      if (str.contains("--indent=")) {
         indent = Integer.parseInt(str.substring(9, str.length()));
         System.out.println(filepath);
       }
