@@ -5,19 +5,19 @@ Using this project you can view, format and modify your json file
 
 The features of the project are available by passing some commands given below:
 
-**--from-** *filepath*   : Takes the file path of a json file from the command line argument
+**--from-file=** *filepath*   : Takes the file path of a json file from the command line argument
 
-**--indent-** *n*        : This command is used to set the required value of indent(here n is an integer)
+**--indent=** *n*             : This command is used to set the required value of indent(here n is an integer)
 
-**--validate**            : This command checks wether a json file is valid or not
+**--validate**                : This command checks wether a json file is valid or not
 
-**--compact-output**      : This command will print the json file without any spaces which means it is the most minimizable form of your file
+**--compact-output**          : This command will print the json file without any spaces which means it is the most minimizable form of your file
 
-**--prettyprint**         : It beautifies your code and print the json file in pretty print format
+**--prettyprint**             : It beautifies your code and print the json file in pretty print format
 
-**--replace**             : It modifies the given file to prettyprint format
+  **--replace**               : It modifies the given file to prettyprint format
 
-**--replacecompact**      : It modifies the given file into compact format
+**--replacecompact**          : It modifies the given file into compact format
 
 
 **How to use:**
